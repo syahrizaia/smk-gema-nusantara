@@ -3,7 +3,7 @@ import Footer from "../../Layouts/Footer"
 import Navbar from "../../Layouts/Navbar"
 
 const HubungiKami = () => {
-    return <div>
+    return <>
         <Navbar />
         <div className="bg-blue-500 text-white flex flex-col gap-3 text-center px-20 py-5">
             <h1 className="text-3xl font-bold">SMK Gema Nusantara</h1>
@@ -12,7 +12,7 @@ const HubungiKami = () => {
         <div className="grid grid-cols-3 gap-10 px-20">
             {dataHubungiKami.dataSekolah.map((item) => (
                 <div key={item.id} className="flex flex-col gap-5 py-5">
-                    <h1 className="bg-blue-500 text-white px-5 py-2 rounded w-full">{item.title}</h1>
+                    <h1 className="bg-blue-500 text-white font-bold px-5 py-2 rounded w-full">{item.title}</h1>
                     <ul className="px-5">
                         <li>Kepsek: <b>{item.kepsek}</b></li>
                         <li>Operator: <b>{item.operator}</b></li>
@@ -24,7 +24,7 @@ const HubungiKami = () => {
             ))}
             {dataHubungiKami.identitasSekolah.map((item) => (
                 <div key={item.id} className="flex flex-col gap-5 py-5">
-                    <h1 className="bg-blue-500 text-white px-5 py-2 rounded w-full">{item.title}</h1>
+                    <h1 className="bg-blue-500 text-white font-bold px-5 py-2 rounded w-full">{item.title}</h1>
                     <ul className="px-5">
                         <li><b>NPSN</b>: {item.NPSN}</li>
                         <li><b>Status</b>: {item.status}</li>
@@ -39,7 +39,7 @@ const HubungiKami = () => {
             ))}
             {dataHubungiKami.kontakUtama.map((item) => (
                 <div key={item.id} className="flex flex-col gap-5 py-5">
-                    <h1 className="bg-blue-500 text-white px-5 py-2 rounded w-full">{item.title}</h1>
+                    <h1 className="bg-blue-500 text-white font-bold px-5 py-2 rounded w-full">{item.title}</h1>
                     <ul className="px-5">
                         <li><b>Alamat</b>: {item.alamat}</li>
                         <li><b>Email</b>: {item.email}</li>
@@ -64,7 +64,7 @@ const HubungiKami = () => {
             allowFullScreen=""
         />
         <Footer />
-    </div>
+    </>
 }
 
 export default HubungiKami

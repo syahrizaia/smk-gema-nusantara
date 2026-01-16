@@ -8,14 +8,12 @@ import SIAP from "./components/Layouts/SIAP"
 function App() {
   return (
     <>
-      <div>
-        <Navbar />
-        <Banner />
-        <SIAP />
-        <Gallery />
-        <LatestNews />
-        <Footer />
-      </div>
+      <Navbar />
+      <Banner />
+      <SIAP />
+      <Gallery />
+      <LatestNews />
+      <Footer />
     </>
   )
 }

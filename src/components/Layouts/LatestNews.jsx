@@ -16,7 +16,7 @@ const LatestNews = () => {
                 <p>SMK Gema Nusantara merupakan Sekolah Menengah Kejuruan swasta yang berdiri sejak tahun 2015 di bawah naungan Yayasan Al-Fath Nusantara. Dengan kurikulum terintegrasi, fasilitas praktik lengkap, dan kemitraan strategis dengan dunia usaha dan industri.</p>
                 <Link
                     className="border-0 rounded-4xl px-5 py-2 bg-blue-900 transition delay-150 duration-300 hover:bg-white hover:text-blue-900 w-fit"
-                    to="/tentang-kami"
+                    to="/profil"
                 >
                     Selengkapnya
                 </Link>

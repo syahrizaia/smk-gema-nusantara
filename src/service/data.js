@@ -225,4 +225,21 @@ const dataFooter = {
     ]
 }
 
-export { dataApp, dataProfil, dataPrestasi, dataPembelajaran, dataLayanan, dataLulusan, dataHubungiKami, dataFooter }
+const dataGallery = {
+    image: [
+        {
+            id: 1,
+            src: "https://smkgemanusantara.sch.id/wp-content/uploads/2023/05/profil2.jpg"
+        },
+        {
+            id: 2,
+            src: "https://smkgemanusantara.sch.id/wp-content/uploads/2023/05/profil3.jpg"
+        },
+        {
+            id: 3,
+            src: "https://smkgemanusantara.sch.id/wp-content/uploads/2023/05/profil5.jpg"
+        }
+    ]
+}
+
+export { dataApp, dataProfil, dataPrestasi, dataPembelajaran, dataLayanan, dataLulusan, dataHubungiKami, dataFooter, dataGallery }

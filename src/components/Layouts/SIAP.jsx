@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import LinkCustom from "../Elements/LinkCustom"
 
 const SIAP = () => {
@@ -7,22 +8,22 @@ const SIAP = () => {
             <h2 className="text-3xl">Sistem Integrasi Aplikasi</h2>
         </div>
         <div className="grid grid-cols-4 gap-5">
-            <LinkCustom to="/buku-pribadi-digital">Buku Pribadi Digital</LinkCustom>
-            <LinkCustom to="/buku-pribadi-digital">Jarvis GENUS</LinkCustom>
-            <LinkCustom to="/buku-pribadi-digital">Perpus Khazanah Analitika</LinkCustom>
-            <LinkCustom to="/buku-pribadi-digital">GENUS Open Championship</LinkCustom>
-            <LinkCustom to="/buku-pribadi-digital">KHS Online</LinkCustom>
-            <LinkCustom to="/buku-pribadi-digital">Gadget Assisted Exam</LinkCustom>
-            <LinkCustom to="/buku-pribadi-digital">LSP P-1 GENUS</LinkCustom>
-            <LinkCustom to="/buku-pribadi-digital">Praktik Kimia Terpadu - 2</LinkCustom>
-            <LinkCustom to="/buku-pribadi-digital">Pelaporan Gratifikasi</LinkCustom>
-            <LinkCustom to="/buku-pribadi-digital">Benturan Kepentingan</LinkCustom>
-            <LinkCustom to="/buku-pribadi-digital">Respon Pelanggan</LinkCustom>
-            <LinkCustom to="/buku-pribadi-digital">Whistle Blowing System</LinkCustom>
-            <LinkCustom to="/buku-pribadi-digital">Legalisir di Rumah (LDR)</LinkCustom>
-            <LinkCustom to="/buku-pribadi-digital">Surat Rekomendasi</LinkCustom>
-            <LinkCustom to="/buku-pribadi-digital">Carrier Development Center</LinkCustom>
-            <LinkCustom to="/buku-pribadi-digital">Praktik Kerja Industri</LinkCustom>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Buku Pribadi Digital</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Jarvis GENUS</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Perpus Khazanah Analitika</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">GENUS Open Championship</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">KHS Online</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Gadget Assisted Exam</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">LSP P-1 GENUS</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Praktik Kimia Terpadu - 2</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Pelaporan Gratifikasi</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Benturan Kepentingan</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Respon Pelanggan</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Whistle Blowing System</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Legalisir di Rumah (LDR)</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Surat Rekomendasi</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Carrier Development Center</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Praktik Kerja Industri</Link>
         </div>
     </div>
 }

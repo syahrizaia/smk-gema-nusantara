@@ -9,6 +9,7 @@ import Layanan from './components/pages/layanan/index.jsx'
 import Prestasi from './components/pages/prestasi/index.jsx'
 import Lulusan from './components/pages/lulusan/index.jsx'
 import HubungiKami from './components/pages/hubungi-kami/index.jsx'
+import NotFound from './components/pages/NotFound.jsx'
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: '/hubungi-kami',
     element: <HubungiKami />,
+  },
+  {
+    path: '/not-found',
+    element: <NotFound />,
   }
 ])
 

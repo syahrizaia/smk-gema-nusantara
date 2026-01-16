@@ -1,9 +1,10 @@
+import { dataGallery } from "../../service/data"
+
 const Gallery = () => {
-    return <div className="flex justify-center items-center gap-5 px-20 py-10 bg-gray-100">
-        {/* <Image src={logo} /> */}
-        <div>Gambar 1</div>
-        <div>Gambar 2</div>
-        <div>Gambar 3</div>
+    return <div className="grid grid-cols-3 items-center gap-5 px-20 py-10 bg-gray-100">
+        {dataGallery.image.map((item) => (
+            <img src={item.src} key={item.id} />
+        ))}
     </div>
 }
 

@@ -3,7 +3,7 @@ import Footer from "../../Layouts/Footer"
 import Navbar from "../../Layouts/Navbar"
 
 const Pembelajaran = () => {
-    return <div>
+    return <>
         <Navbar />
         <div className="flex flex-col items-center">
             <h1 className="text-3xl text-center font-bold py-5 w-full bg-blue-500 text-white">
@@ -14,7 +14,7 @@ const Pembelajaran = () => {
             ))}
         </div>
         <Footer />
-    </div>
+    </>
 }
 
 export default Pembelajaran

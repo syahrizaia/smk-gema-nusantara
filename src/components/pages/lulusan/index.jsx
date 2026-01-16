@@ -3,7 +3,7 @@ import Footer from "../../Layouts/Footer"
 import Navbar from "../../Layouts/Navbar"
 
 const Lulusan = () => {
-    return <div>
+    return <>
         <Navbar />
         <div className="bg-blue-500 text-white flex flex-col gap-5 text-center px-20 py-5">
             <h1 className="text-3xl font-bold">Keterserapan Lulusan SMK Gema Nusantara</h1>
@@ -17,7 +17,7 @@ const Lulusan = () => {
             </div>
         ))}
         <Footer />
-    </div>
+    </>
 }
 
 export default Lulusan
