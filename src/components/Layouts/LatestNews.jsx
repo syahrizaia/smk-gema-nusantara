@@ -1,24 +1,7 @@
 import { Link } from "react-router-dom"
 import CardCustom from "../Elements/CardCustom"
 import TotalNews from "./TotalNews"
-
-const data = [
-    {
-        id: 1,
-        title: "Kurikulum Terintegrasi",
-        description: "Mengintegrasikan kurikulum Kemendikbud, SKKNI, serta standar industri (Mitsubishi, Musashi, dan mitra lainnya), yang divalidasi oleh dunia usaha dan dunia industri sehingga pembelajaran lebih relevan dengan kebutuhan nyata."
-    },
-    {
-        id: 2,
-        title: "Laboratorium Lengkap",
-        description: "Memiliki laboratorium modern dan ruang praktik Teaching Factory yang menunjang pembelajaran berbasis produksi/layanan, sehingga siswa terbiasa dengan suasana kerja industri sejak di bangku sekolah."
-    },
-    {
-        id: 3,
-        title: "Keterserapan Lulusan Tinggi",
-        description: "Lulusan dibekali kompetensi unggul, kemampuan bahasa, serta budaya kerja profesional, sehingga cepat terserap di perusahaan mitra maupun siap melanjutkan ke perguruan tinggi."
-    }
-]
+import { dataApp } from "../../service/data"
 
 const LatestNews = () => {
     return <div className="flex flex-col justify-center gap-2 bg-white">
@@ -38,7 +21,7 @@ const LatestNews = () => {
                     Selengkapnya
                 </Link>
             </div>
-            {data.map((item, id) => {
+            {dataApp.card.map((item, id) => {
                 return <CardCustom key={id} title={item.title} description={item.description} />
             })}
         </div>

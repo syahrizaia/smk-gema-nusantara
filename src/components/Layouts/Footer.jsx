@@ -1,27 +1,5 @@
 import { Link } from "react-router-dom"
-
-const quickLink = [
-    {
-        id: 1,
-        title: "Tautan Penting",
-        link: ["Galeri Kegiatan", "Informasi Publik", "Manajemen Sekolah", "SMM ISO/Standar Mutu"]
-    },
-    {
-        id: 2,
-        title: "Zona Integritas",
-        link: ["Respon Pelanggan", "Pengaduan Masyarakat", "Pelaporan Gratifikasi", "Transparansi & Akuntabilitas"]
-    },
-    {
-        id: 3,
-        title: "Layanan",
-        link: ["Legalisir", "Surat Rekomendasi", "Informasi Publik", "Survei Kepuasan"]
-    },
-    {
-        id: 4,
-        title: "Sertifikat & Standar",
-        link: ["Sertifikasi Pendidikan Vokasi", "Akreditasi \"A\" BAN-SM"]
-    }
-]
+import { dataFooter } from "../../service/data"
 
 const Footer = () => {
     return <footer>
@@ -31,7 +9,7 @@ const Footer = () => {
                 <p>Jl. Raya Cibarusah, Warung Bambu, Sindangmulya, Kec. Cibarusah, Kab. Bekasi, Prov. Jawa Barat</p>
                 <p>Phone: (021)22154328 <br /> Email: mail@smkgemanusantara.sch.id</p>
             </div>
-            {quickLink.map((item) => (
+            {dataFooter.quickLink.map((item) => (
                 <div key={item.id} className="flex flex-col items-start gap-5">
                     <h1 className="text-xl font-bold">{item.title}</h1>
                     <div className="flex flex-col gap-1">
