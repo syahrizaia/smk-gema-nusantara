@@ -1,13 +1,25 @@
+import Aos from "aos"
+import 'aos/dist/aos.css';
+import { useEffect } from "react"
 import { Link } from "react-router-dom"
-import LinkCustom from "../Elements/LinkCustom"
 
 const SIAP = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, [])
+
     return <div className="flex flex-col justify-center gap-5 px-20 py-10">
-        <div className="flex flex-col justify-center gap-2">
+        <div
+         data-aos="fade-up"
+            className="flex flex-col justify-center gap-2"
+        >
             <h1>SIAP -----</h1>
             <h2 className="text-3xl">Sistem Integrasi Aplikasi</h2>
         </div>
-        <div className="grid grid-cols-4 gap-5">
+        <div
+            data-aos="zoom-in"
+            className="grid grid-cols-4 gap-5"
+        >
             <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Buku Pribadi Digital</Link>
             <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Jarvis GENUS</Link>
             <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Perpus Khazanah Analitika</Link>

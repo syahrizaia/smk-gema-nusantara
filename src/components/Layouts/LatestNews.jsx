@@ -2,15 +2,28 @@ import { Link } from "react-router-dom"
 import CardCustom from "../Elements/CardCustom"
 import TotalNews from "./TotalNews"
 import { dataApp } from "../../service/data"
+import { useEffect } from "react"
+import Aos from "aos"
+import 'aos/dist/aos.css';
 
 const LatestNews = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, [])
+
     return <div className="flex flex-col justify-center gap-2 bg-white">
-        <div className="flex flex-col justify-center gap-2 px-20 py-5">
+        <div
+            data-aos="fade-up"
+            className="flex flex-col justify-center gap-2 px-20 py-5"
+        >
             <h1>Berita Terkini -----</h1>
             <h2 className="text-3xl">SMK GENUS</h2>
         </div>
         <TotalNews />
-        <div className="grid grid-cols-4 items-center gap-5 px-20 py-10">
+        <div
+            data-aos="fade-up"
+            className="grid grid-cols-4 items-center gap-5 px-20 py-10"
+        >
             <div className="flex flex-col gap-5 border rounded-lg shadow-md p-5 text-center bg-blue-500 text-white">
                 <h1 className="text-2xl font-bold">Kenapa Harus SMK GEMA NUSANTARA?</h1>
                 <p>SMK Gema Nusantara merupakan Sekolah Menengah Kejuruan swasta yang berdiri sejak tahun 2015 di bawah naungan Yayasan Al-Fath Nusantara. Dengan kurikulum terintegrasi, fasilitas praktik lengkap, dan kemitraan strategis dengan dunia usaha dan industri.</p>

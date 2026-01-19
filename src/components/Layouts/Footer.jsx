@@ -14,7 +14,7 @@ const Footer = () => {
                     <h1 className="text-xl font-bold">{item.title}</h1>
                     <div className="flex flex-col gap-1">
                         {item.link.map((link, id) => (
-                            <Link key={id} to="/not-found" className="text-black transition delay-150 duration-300 hover:text-blue-500">{link}</Link>
+                            <Link key={id} to="/not-found" className="text-black transition delay-150 duration-300 hover:text-blue-500">&rarr; {link}</Link>
                         ))}
                     </div>
                 </div>
