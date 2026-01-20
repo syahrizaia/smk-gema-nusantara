@@ -6,7 +6,7 @@ import { useEffect } from "react"
 import Aos from "aos"
 import 'aos/dist/aos.css';
 
-const Profil = () => {
+const TentangKami = () => {
     useEffect(() => {
         Aos.init({ duration: 1000 })
     }, [])
@@ -47,4 +47,4 @@ const Profil = () => {
     </>
 }
 
-export default Profil
+export default TentangKami

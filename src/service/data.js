@@ -200,6 +200,139 @@ const dataHubungiKami = {
     mapLocation: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3964.8186642849946!2d107.091817!3d-6.417341!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69978379d7ee2b%3A0x5a0eafbdffe232e0!2sSMKS%20Pusat%20Keunggulan%20Gema%20Nusantara!5e0!3m2!1sen!2sus!4v1768521529775!5m2!1sen!2sus"
 }
 
+const dataNavbar = {
+    image: "https://smkgemanusantara.sch.id/wp-content/uploads/2023/09/cropped-Logo-SMK-Circle-1.png",
+    home: [
+        {
+            to: "/",
+            label: "Home"
+        }
+    ],
+    tentangKami: [
+        {
+            to: "tentang-kami",
+            label: "Tentang Kami",
+            withArrow: true,
+            subLinks: [
+                { to: "/tentang-kami/berita-terkini", label: "Berita Terkini" },
+                { to: "/tentang-kami", label: "Profil" },
+                { to: "/tentang-kami/sejarah", label: "Sejarah" },
+                { to: "/tentang-kami/visi-misi", label: "Visi & Misi" },
+                { to: "/tentang-kami/sasaran-mutu", label: "Sasaran Mutu" },
+                {
+                    to: "#",
+                    label: "Struktur",
+                    withArrow: true,
+                    subLinks: [
+                        { to: "/tentang-kami/struktur/kepala-sekolah", label: "Kepala Sekolah" },
+                        { to: "/tentang-kami/struktur/struktur-organisasi", label: "Struktur Organisasi" }
+                    ]
+                }
+            ]
+        }
+    ],
+    pembelajaran: [
+        {
+            to: "/pembelajaran",
+            label: "Pembelajaran",
+            withArrow: true,
+            subLinks: [
+                {
+                    to: "#",
+                    label: "Kurikulum",
+                    withArrow: true,
+                    subLinks: [
+                        { to: "/pembelajaran/kurikulum/jadwal-pembelajaran", label: "Jadwal Pembelajaran" },
+                        { to: "/pembelajaran/kurikulum/struktur-kurikulum", label: "Struktur Kurikulum" }
+                    ]
+                },
+                {
+                    to: "/pembelajaran/fasilitas",
+                    label: "Fasilitas",
+                    withArrow: true,
+                    subLinks: [
+                        { to: "/pembelajaran/fasilitas/fasilitas-laboratorium", label: "Fasilitas Laboratorium" },
+                        { to: "/pembelajaran/fasilitas/fasilitas-penunjang", label: "Fasilitas Penunjang" }
+                    ]
+                },
+                {
+                    to: "#",
+                    label: "Sumber Daya Manusia",
+                    withArrow: true,
+                    subLinks: [
+                        { to: "/pembelajaran/sumber-daya-manusia/statistik-sdm", label: "Statistik SDM" },
+                        { to: "/pembelajaran/sumber-daya-manusia/profil-sdm", label: "Profil SDM" }
+                    ]
+                },
+                {
+                    to: "#",
+                    label: "Kegiatan",
+                    withArrow: true,
+                    subLinks: [
+                        { to: "/pembelajaran/kegiatan/kegiatan-tahunan", label: "Kegiatan Tahunan" },
+                        { to: "/pembelajaran/kegiatan/ekstrakurikuler-siswa", label: "Ekstrakurikuler Siswa" },
+                        { to: "/pembelajaran/kegiatan/organisasi-siswa", label: "Organisasi Siswa" }
+                    ]
+                }
+            ]
+        }
+    ],
+    layanan: [
+        { to: "/layanan/legalisir-di-rumah", label: "Legalisir Di Rumah" },
+        { to: "/layanan/surat-rekomendasi", label: "Surat Rekomendasi" },
+        {
+            to: "/layanan/informasi-publik",
+            label: "Informasi Publik",
+            withArrow: true,
+            subLinks: [
+                { to: "/layanan/informasi-publik/permohonan-informasi-publik", label: "Permohonan Informasi Publik" },
+                { to: "/layanan/informasi-publik/jenis-informasi", label: "Jenis Informasi" },
+                {
+                    to: "/layanan/informasi-publik/laporan-laporan",
+                    label: "Laporan-laporan",
+                    withArrow: true,
+                    subLinks: [
+                        { to: "/layanan/informasi-publik/laporan-laporan/tata-usaha", label: "Tata Usaha" },
+                        { to: "/layanan/informasi-publik/laporan-laporan/respon-pelanggan", label: "Respon Pelanggan" },
+                        { to: "/layanan/informasi-publik/laporan-laporan/ppid", label: "PPID" }
+                    ]
+                },
+                { to: "/layanan/informasi-publik/survei-kepuasan-pelanggan", label: "Survei Kepuasan Pelanggan" }
+            ]
+        }
+    ],
+    prestasi: [
+        {
+            to: "/prestasi",
+            label: "Prestasi",
+            withArrow: true,
+            subLinks: [
+                { to: "/prestasi/prestasi-sekolah", label: "Prestasi Sekolah" },
+                { to: "/prestasi/prestasi-guru", label: "Prestasi Guru" },
+                { to: "/prestasi/prestasi-siswa", label: "Prestasi Siswa" },
+                { to: "/prestasi/bintang-belajar", label: "Bintang Belajar" }
+            ]
+        }
+    ],
+    lulusan: [
+        {
+            to: "/lulusan",
+            label: "Lulusan",
+            withArrow: true,
+            subLinks: [
+                { to: "/lulusan/keterserapan-lulusan", label: "Keterserapan Lulusan" },
+                { to: "/lulusan/industri-mitra", label: "Industri Mitra" }
+            ]
+        }
+    ],
+    hubungiKami: [
+        {
+            to: "/hubungi-kami",
+            label: "Hubungi Kami"
+        }
+    ]
+}
+
 const dataFooter = {
     quickLink: [
         {
@@ -242,4 +375,83 @@ const dataGallery = {
     ]
 }
 
-export { dataApp, dataProfil, dataPrestasi, dataPembelajaran, dataLayanan, dataLulusan, dataHubungiKami, dataFooter, dataGallery }
+const dataHeadmaster = [
+    {
+        id: 1,
+        photo: "https://smkgemanusantara.sch.id/wp-content/uploads/2025/10/education_s.png",
+        name: "Ir. HR. Ganjar Mulyono, S.Sos",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+    },
+    {
+        id: 2,
+        photo: "https://smkgemanusantara.sch.id/wp-content/uploads/2025/10/education_s.png",
+        name: "Gumilang Agung Laksono, S.E",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+    }
+]
+
+const dataVisiMisi = [
+    {
+        id: 1,
+        title: "1. Visi",
+        description: "Menjadi Sekolah Menengah Kejuruan yang bermutu, unggul merata, sehingga dapat menghantarkan Peserta Didik menjadi terampil, berkarakter, kompeten dan mandiri."
+    },
+    {
+        id: 2,
+        title: "2. Misi",
+        description: [
+            "Menyelenggarakan pembelajaran aktif, inovatif, kreatif, efektif dan menyenangkan",
+            "Membekali Peserta Didik dengan pengetahuan, keterampilan dan teknologi yang sesuai dengan kebutuhan Dunia Usaha, Dunia Industri dan Dunia Kerja",
+            "Mewujudkan pendidikan yang menghasilkan Lulusan cerdas spiritual, cerdas emosional dan cerdas intelektual"
+        ]
+    }
+]
+
+const dataSasaranMutu = [
+    {
+        id: 1,
+        no: 1,
+        content: "Meningkatkan mutu lulusan dengan target minimal 90% siswa lulus tepat waktu dengan kompetensi sesuai standar SKKNI dan kebutuhan industri."
+    },
+    {
+        id: 2,
+        no: 2,
+        content: "Meningkatkan keterserapan lulusan, dengan target minimal 70% bekerja di industri mitra, 20% melanjutkan ke perguruan tinggi, dan 10% berwirausaha."
+    },
+    {
+        id: 3,
+        no: 3,
+        content: "Meningkatkan kompetensi guru dan tenaga kependidikan, dengan target seluruh guru mengikuti minimal 1 kali pelatihan/pengembangan profesi setiap tahun."
+    },
+    {
+        id: 4,
+        no: 4,
+        content: "Meningkatkan kerjasama dengan dunia usaha dan dunia industri (DUDI), dengan target penambahan minimal 2 mitra industri baru setiap tahun."
+    },
+    {
+        id: 5,
+        no: 5,
+        content: "Meningkatkan kepuasan layanan pendidikan, baik kepada siswa, orang tua, maupun mitra industri dengan target kepuasan minimal 85% berdasarkan survei tahunan."
+    },
+    {
+        id: 6,
+        no: 6,
+        content: "Mengembangkan fasilitas belajar dengan target peningkatan sarana-prasarana secara bertahap sesuai kebutuhan pembelajaran berbasis industri dan digitalisasi sekolah."
+    }
+]
+
+export {
+    dataApp,
+    dataProfil,
+    dataPrestasi,
+    dataPembelajaran,
+    dataLayanan,
+    dataLulusan,
+    dataHubungiKami,
+    dataNavbar,
+    dataFooter,
+    dataGallery,
+    dataHeadmaster,
+    dataVisiMisi,
+    dataSasaranMutu
+}
