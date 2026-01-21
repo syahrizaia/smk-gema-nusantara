@@ -235,7 +235,7 @@ const dataNavbar = {
             ]
         },
         {
-            to: "/pembelajaran/fasilitas",
+            to: "/pembelajaran/fasilitas/fasilitas-laboratorium",
             label: "Fasilitas",
             withArrow: true,
             subLinks: [
@@ -451,6 +451,60 @@ const dataSasaranMutu = [
     }
 ]
 
+const dataStatistikSDM = [
+    {
+        id: 1,
+        image: "https://smkgemanusantara.sch.id/wp-content/uploads/2023/09/statistik-sdm-01-1.jpg"
+    },
+    {
+        id: 2,
+        image: "https://smkgemanusantara.sch.id/wp-content/uploads/2023/09/statistik-jabatan-01.jpg"
+    },
+    {
+        id: 3,
+        image: "https://smkgemanusantara.sch.id/wp-content/uploads/2023/05/IMG_20220810_161211-scaled-1-1024x471.jpg"
+    },
+    {
+        id: 4,
+        image: "https://smkgemanusantara.sch.id/wp-content/uploads/2023/05/IMG_20220810_161211-scaled-1-1024x471.jpg"
+    }
+]
+
+const dataKegiatanTahunan = [
+    {
+        id: 1,
+        image: "https://smkgemanusantara.sch.id/wp-content/uploads/2025/10/School-Musashi-Olympic-2.0-Measuring-Competition-7-1024x1024.jpg"
+    },
+    {
+        id: 2,
+        image: "https://smkgemanusantara.sch.id/wp-content/uploads/2025/10/School-Musashi-Olympic-2.0-Measuring-Competition-6-1024x1024.jpg"
+    },
+    {
+        id: 3,
+        image: "https://smkgemanusantara.sch.id/wp-content/uploads/2025/10/School-Musashi-Olympic-2.0-Measuring-Competition-5-1024x1024.jpg"
+    },
+    {
+        id: 4,
+        image: "https://smkgemanusantara.sch.id/wp-content/uploads/2025/10/School-Musashi-Olympic-2.0-Measuring-Competition-4-1024x1024.jpg"
+    },
+    {
+        id: 5,
+        image: "https://smkgemanusantara.sch.id/wp-content/uploads/2025/10/School-Musashi-Olympic-2.0-Measuring-Competition-3-1024x1024.jpg"
+    },
+    {
+        id: 6,
+        image: "https://smkgemanusantara.sch.id/wp-content/uploads/2025/10/School-Musashi-Olympic-2.0-Measuring-Competition-2-1024x1024.jpg"
+    },
+    {
+        id: 7,
+        image: "https://smkgemanusantara.sch.id/wp-content/uploads/2025/10/School-Musashi-Olympic-2.0-Measuring-Competition-1-1024x1024.jpg"
+    },
+    {
+        id: 8,
+        image: "https://smkgemanusantara.sch.id/wp-content/uploads/2025/10/School-Musashi-Olympic-2.0-Measuring-Competition-1024x1024.jpg"
+    }
+]
+
 export {
     dataApp,
     dataProfil,
@@ -464,5 +518,7 @@ export {
     dataGallery,
     dataHeadmaster,
     dataVisiMisi,
-    dataSasaranMutu
+    dataSasaranMutu,
+    dataStatistikSDM,
+    dataKegiatanTahunan
 }

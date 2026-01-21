@@ -39,6 +39,8 @@ import IndustriMitra from './components/pages/lulusan/IndustriMitra.jsx'
 import StrukturOrganisasi from './components/pages/tentang-kami/struktur/StrukturOrganisasi.jsx'
 import FasilitasPenunjang from './components/pages/pembelajaran/fasilitas/FasilitasPenunjang.jsx'
 import ProfilSDM from './components/pages/pembelajaran/sumber-daya-manusia/ProfilSDM.jsx'
+import InformasiPublik from './components/pages/layanan/informasi-publik/index.jsx'
+import LaporanLaporan from './components/pages/layanan/informasi-publik/laporan-laporan/index.jsx'
 
 const router = createBrowserRouter([
   {
@@ -126,12 +128,20 @@ const router = createBrowserRouter([
     element: <SuratRekomendasi />,
   },
   {
+    path: '/layanan/informasi-publik',
+    element: <InformasiPublik />,
+  },
+  {
     path: '/layanan/informasi-publik/permohonan-informasi-publik',
     element: <PermohonanInformasiPublik />,
   },
   {
     path: '/layanan/informasi-publik/jenis-informasi',
     element: <JenisInformasi />,
+  },
+  {
+    path: '/layanan/informasi-publik/laporan-laporan',
+    element: <LaporanLaporan />,
   },
   {
     path: '/layanan/informasi-publik/laporan-laporan/tata-usaha',
