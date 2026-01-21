@@ -209,71 +209,57 @@ const dataNavbar = {
         }
     ],
     tentangKami: [
+        { to: "/tentang-kami/berita-terkini", label: "Berita Terkini" },
+        { to: "/tentang-kami", label: "Profil" },
+        { to: "/tentang-kami/sejarah", label: "Sejarah" },
+        { to: "/tentang-kami/visi-misi", label: "Visi & Misi" },
+        { to: "/tentang-kami/sasaran-mutu", label: "Sasaran Mutu" },
         {
-            to: "tentang-kami",
-            label: "Tentang Kami",
+            to: "#",
+            label: "Struktur",
             withArrow: true,
             subLinks: [
-                { to: "/tentang-kami/berita-terkini", label: "Berita Terkini" },
-                { to: "/tentang-kami", label: "Profil" },
-                { to: "/tentang-kami/sejarah", label: "Sejarah" },
-                { to: "/tentang-kami/visi-misi", label: "Visi & Misi" },
-                { to: "/tentang-kami/sasaran-mutu", label: "Sasaran Mutu" },
-                {
-                    to: "#",
-                    label: "Struktur",
-                    withArrow: true,
-                    subLinks: [
-                        { to: "/tentang-kami/struktur/kepala-sekolah", label: "Kepala Sekolah" },
-                        { to: "/tentang-kami/struktur/struktur-organisasi", label: "Struktur Organisasi" }
-                    ]
-                }
+                { to: "/tentang-kami/struktur/kepala-sekolah", label: "Kepala Sekolah" },
+                { to: "/tentang-kami/struktur/struktur-organisasi", label: "Struktur Organisasi" }
             ]
         }
     ],
     pembelajaran: [
         {
-            to: "/pembelajaran",
-            label: "Pembelajaran",
+            to: "#",
+            label: "Kurikulum",
             withArrow: true,
             subLinks: [
-                {
-                    to: "#",
-                    label: "Kurikulum",
-                    withArrow: true,
-                    subLinks: [
-                        { to: "/pembelajaran/kurikulum/jadwal-pembelajaran", label: "Jadwal Pembelajaran" },
-                        { to: "/pembelajaran/kurikulum/struktur-kurikulum", label: "Struktur Kurikulum" }
-                    ]
-                },
-                {
-                    to: "/pembelajaran/fasilitas",
-                    label: "Fasilitas",
-                    withArrow: true,
-                    subLinks: [
-                        { to: "/pembelajaran/fasilitas/fasilitas-laboratorium", label: "Fasilitas Laboratorium" },
-                        { to: "/pembelajaran/fasilitas/fasilitas-penunjang", label: "Fasilitas Penunjang" }
-                    ]
-                },
-                {
-                    to: "#",
-                    label: "Sumber Daya Manusia",
-                    withArrow: true,
-                    subLinks: [
-                        { to: "/pembelajaran/sumber-daya-manusia/statistik-sdm", label: "Statistik SDM" },
-                        { to: "/pembelajaran/sumber-daya-manusia/profil-sdm", label: "Profil SDM" }
-                    ]
-                },
-                {
-                    to: "#",
-                    label: "Kegiatan",
-                    withArrow: true,
-                    subLinks: [
-                        { to: "/pembelajaran/kegiatan/kegiatan-tahunan", label: "Kegiatan Tahunan" },
-                        { to: "/pembelajaran/kegiatan/ekstrakurikuler-siswa", label: "Ekstrakurikuler Siswa" },
-                        { to: "/pembelajaran/kegiatan/organisasi-siswa", label: "Organisasi Siswa" }
-                    ]
-                }
+                { to: "/pembelajaran/kurikulum/jadwal-pembelajaran", label: "Jadwal Pembelajaran" },
+                { to: "/pembelajaran/kurikulum/struktur-kurikulum", label: "Struktur Kurikulum" }
+            ]
+        },
+        {
+            to: "/pembelajaran/fasilitas",
+            label: "Fasilitas",
+            withArrow: true,
+            subLinks: [
+                { to: "/pembelajaran/fasilitas/fasilitas-laboratorium", label: "Fasilitas Laboratorium" },
+                { to: "/pembelajaran/fasilitas/fasilitas-penunjang", label: "Fasilitas Penunjang" }
+            ]
+        },
+        {
+            to: "#",
+            label: "Sumber Daya Manusia",
+            withArrow: true,
+            subLinks: [
+                { to: "/pembelajaran/sumber-daya-manusia/statistik-sdm", label: "Statistik SDM" },
+                { to: "/pembelajaran/sumber-daya-manusia/profil-sdm", label: "Profil SDM" }
+            ]
+        },
+        {
+            to: "#",
+            label: "Kegiatan",
+            withArrow: true,
+            subLinks: [
+                { to: "/pembelajaran/kegiatan/kegiatan-tahunan", label: "Kegiatan Tahunan" },
+                { to: "/pembelajaran/kegiatan/ekstrakurikuler-siswa", label: "Ekstrakurikuler Siswa" },
+                { to: "/pembelajaran/kegiatan/organisasi-siswa", label: "Organisasi Siswa" }
             ]
         }
     ],
@@ -302,28 +288,14 @@ const dataNavbar = {
         }
     ],
     prestasi: [
-        {
-            to: "/prestasi",
-            label: "Prestasi",
-            withArrow: true,
-            subLinks: [
-                { to: "/prestasi/prestasi-sekolah", label: "Prestasi Sekolah" },
-                { to: "/prestasi/prestasi-guru", label: "Prestasi Guru" },
-                { to: "/prestasi/prestasi-siswa", label: "Prestasi Siswa" },
-                { to: "/prestasi/bintang-belajar", label: "Bintang Belajar" }
-            ]
-        }
+        { to: "/prestasi/prestasi-sekolah", label: "Prestasi Sekolah" },
+        { to: "/prestasi/prestasi-guru", label: "Prestasi Guru" },
+        { to: "/prestasi/prestasi-siswa", label: "Prestasi Siswa" },
+        { to: "/prestasi/bintang-belajar", label: "Bintang Belajar" }
     ],
     lulusan: [
-        {
-            to: "/lulusan",
-            label: "Lulusan",
-            withArrow: true,
-            subLinks: [
-                { to: "/lulusan/keterserapan-lulusan", label: "Keterserapan Lulusan" },
-                { to: "/lulusan/industri-mitra", label: "Industri Mitra" }
-            ]
-        }
+        { to: "/lulusan/keterserapan-lulusan", label: "Keterserapan Lulusan" },
+        { to: "/lulusan/industri-mitra", label: "Industri Mitra" }
     ],
     hubungiKami: [
         {
@@ -386,6 +358,45 @@ const dataHeadmaster = [
         id: 2,
         photo: "https://smkgemanusantara.sch.id/wp-content/uploads/2025/10/education_s.png",
         name: "Gumilang Agung Laksono, S.E",
+        position: "Kepala Sekolah SMK Gema Nusantara",
+        socialMedia: [
+            {
+                icon: "fab fa-twitter",
+                link: "https://twitter.com"
+            },
+            {
+                icon: "fab fa-facebook",
+                link: "https://facebook.com"
+            },
+            {
+                icon: "fab fa-instagram",
+                link: "https://instagram.com"
+            }
+        ],
+        motto: "Teaching is a work of heart",
+        content: [
+            {
+                title: "Latar Belakang",
+                description: "Gumilang Agung Laksono adalah seorang pendidik sekaligus pemimpin sekolah yang berkomitmen pada pengembangan pendidikan vokasi berbasis industri. Dengan latar belakang pendidikan dan pengalaman dalam manajemen sekolah, beliau fokus menjadikan SMK Gema Nusantara sebagai pusat keunggulan (Center of Excellence) di bidang otomotif dan manajemen perkantoran."
+            },
+            {
+                title: "Visi Kepemimpinan",
+                description: [
+                    "Mendorong penerapan Teaching Factory dan kelas industri hasil kolaborasi dengan mitra besar seperti Mitsubishi Motors Krama Yudha Indonesia (MMKI) dan Musashi Auto Parts.",
+                    "Mengintegrasikan kurikulum sekolah dengan standar SKKNI, industri, serta internasional.",
+                    "Memperkuat digitalisasi sekolah dan budaya kerja profesional yang berkarakter.",
+                    "Menjadikan SMK Gema Nusantara sebagai sekolah rujukan vokasi di Bekasi, Jawa Barat, dan nasional."
+                ]
+            },
+            {
+                title: "Prestasi & Inovasi",
+                description: [
+                    "Menginisiasi kerjasama strategis dengan MMKI dalam bidang pembelajaran dan penempatan kerja lulusan.",
+                    "Mendorong program LPK Jepang untuk membuka jalur karier internasional bagi lulusan.",
+                    "Membawa SMK Gema Nusantara meraih prestasi di ajang Kaizen Contest 2024 dan Kiken Yochi Contest 2025 yang diselenggarakan MMKI."
+                ]
+            }
+        ],
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
     }
 ]

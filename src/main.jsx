@@ -126,7 +126,7 @@ const router = createBrowserRouter([
     element: <SuratRekomendasi />,
   },
   {
-    path: '/layayanan/informasi-publik/permohonan-informasi-publik',
+    path: '/layanan/informasi-publik/permohonan-informasi-publik',
     element: <PermohonanInformasiPublik />,
   },
   {

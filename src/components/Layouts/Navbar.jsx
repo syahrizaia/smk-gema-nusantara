@@ -9,7 +9,7 @@ const NavItem = ({ item }) => {
     <div className="relative group/item">
       <Link
         to={item.to}
-        className="flex justify-between items-center px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 whitespace-nowrap"
+        className="flex justify-between items-center px-4 py-3 text-sm hover:bg-blue-50 hover:text-blue-600 whitespace-nowrap"
       >
         <span>{item.label}</span>
         {item.withArrow && <span className="ml-4">&rarr;</span>}
@@ -37,53 +37,32 @@ const Navbar = () => {
             height={50}
         />
         <LinkCustom to={"/"}>Home</LinkCustom>
-        <LinkCustom
-            to={"/tentang-kami"}
-            subLinks={[
-                { to: "/tentang-kami/berita-terkini", label: "Berita Terkini" },
-                { to: "/tentang-kami", label: "Profil" },
-                { to: "/tentang-kami/sejarah", label: "Sejarah" },
-                { to: "/tentang-kami/visi-misi", label: "Visi & Misi" },
-                { to: "/tentang-kami/sasaran-mutu", label: "Sasaran Mutu" },
-                {
-                    to: "#",
-                    label: "Struktur",
-                    withArrow: true,
-                    subLinks: [
-                        { to: "/tentang-kami/struktur/kepala-sekolah", label: "Kepala Sekolah" },
-                        { to: "/tentang-kami/struktur/struktur-organisasi", label: "Struktur Organisasi" }
-                    ]
-                }
-            ]}
-        >
-            Tentang Kami &darr;
-        </LinkCustom>
-        <LinkCustom
-            to={"/pembelajaran"}
-            subLinks={[
-                { to: "#", label: "Kurikulum", withArrow: true },
-                { to: "/pembelajaran/fasilitas", label: "Fasilitas", withArrow: true },
-                { to: "#", label: "Sumber Daya Manusia", withArrow: true },
-                { to: "#", label: "Kegiatan", withArrow: true }
-            ]}
-        >
-            Pembelajaran &darr;
-        </LinkCustom>
-        {/* <Link
-            to={"/layanan"}
-            subLinks={[
-                { to: "/layanan/legalisir-di-rumah", label: "Legalisir di Rumah" },
-                { to: "/layanan/surat-rekomendasi", label: "Surat Rekomendasi" },
-                { to: "/layanan/informasi-publik", label: "Informasi Publik", withArrow: true }
-            ]}
-        >
-            Layanan &darr;
-        </Link> */}
-        <Link
-            to={"layanan"}
-            className="relative group z-50"
-        >
-            Layanan &darr;
+        <div className="relative group z-50">
+            <LinkCustom to={"/tentang-kami"}>Tentang Kami &darr;</LinkCustom>
+
+            {/* Dropdown Level 1 (Muncul ke Bawah) */}
+            <div className="absolute left-0 top-full hidden group-hover:block min-w-[200px] pt-2">
+                <div className="bg-white shadow-xl border border-gray-100 rounded-lg py-2">
+                    {dataNavbar.tentangKami.map((item, index) => (
+                    <NavItem key={index} item={item} />
+                    ))}
+                </div>
+            </div>
+        </div>
+        <div className="relative group z-50">
+            <LinkCustom to={"/pembelajaran"}>Pembelajaran &darr;</LinkCustom>
+
+            {/* Dropdown Level 1 (Muncul ke Bawah) */}
+            <div className="absolute left-0 top-full hidden group-hover:block min-w-[200px] pt-2">
+                <div className="bg-white shadow-xl border border-gray-100 rounded-lg py-2">
+                    {dataNavbar.pembelajaran.map((item, index) => (
+                    <NavItem key={index} item={item} />
+                    ))}
+                </div>
+            </div>
+        </div>
+        <div className="relative group z-50">
+            <LinkCustom to={"/layanan"}>Layanan &darr;</LinkCustom>
 
             {/* Dropdown Level 1 (Muncul ke Bawah) */}
             <div className="absolute left-0 top-full hidden group-hover:block min-w-[200px] pt-2">
@@ -93,7 +72,7 @@ const Navbar = () => {
                     ))}
                 </div>
             </div>
-        </Link>
+        </div>
         <LinkCustom
             to={"/prestasi"}
             subLinks={[
