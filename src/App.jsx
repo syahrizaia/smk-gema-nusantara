@@ -9,10 +9,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <Banner />
-      <SIAP />
-      <Gallery />
-      <LatestNews />
+      <main>
+        <Banner />
+        <SIAP />
+        <Gallery />
+        <LatestNews />
+      </main>
       <Footer />
     </>
   )

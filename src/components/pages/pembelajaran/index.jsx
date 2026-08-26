@@ -17,7 +17,7 @@ const Pembelajaran = () => {
                 Kurikulum di SMK - SMAK Gema Nusantara
             </h1>
             {dataPembelajaran?.dataImage?.map((item) => (
-                <img data-aos="zoom-in" src={item.src} key={item.id} />
+                <img alt="SMK Gema Nusantara" loading="lazy" data-aos="zoom-in" src={item.src} key={item.id} />
             ))}
         </div>
         <Footer />

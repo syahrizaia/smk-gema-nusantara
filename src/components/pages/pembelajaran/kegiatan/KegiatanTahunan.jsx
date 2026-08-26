@@ -15,7 +15,7 @@ const KegiatanTahunan = () => {
         <h1 className="text-3xl font-bold text-white text-center bg-blue-500 py-5">Kegiatan Tahunan SMK Gema Nusantara</h1>
         <div className="grid grid-cols-3 gap-5 px-20 py-10">
             {dataKegiatanTahunan.map((item) => {
-                return <img
+                return <img loading="lazy"
                     data-aos="zoom-in"
                     key={item.id}
                     src={item.image}

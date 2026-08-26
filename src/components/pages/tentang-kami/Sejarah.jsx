@@ -16,7 +16,7 @@ const Sejarah = () => {
         <h1 className="text-3xl font-bold text-white text-center bg-blue-500 py-5">Sejarah SMK - SMKS Gema Nusantara</h1>
         <div className="grid grid-cols-2 gap-10 px-20 py-10">
             <div data-aos="fade-right">
-                <img
+                <img loading="lazy"
                     className="transition-transform delay-150 duration-300 hover:scale-110"
                     src="https://smkgemanusantara.sch.id/wp-content/uploads/2023/05/IMG_20220810_161211-scaled-1-2048x942.jpg"
                     alt="Gambar"

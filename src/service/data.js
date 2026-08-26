@@ -310,22 +310,40 @@ const dataFooter = {
         {
             id: 1,
             title: "Tautan Penting",
-            link: ["Galeri Kegiatan", "Informasi Publik", "Manajemen Sekolah", "SMM ISO/Standar Mutu"]
+            link: [
+                { label: "Galeri Kegiatan", to: "/" },
+                { label: "Informasi Publik", to: "/layanan/informasi-publik" },
+                { label: "Manajemen Sekolah", to: "/tentang-kami/struktur/struktur-organisasi" },
+                { label: "SMM ISO/Standar Mutu", to: "/tentang-kami/sasaran-mutu" }
+            ]
         },
         {
             id: 2,
             title: "Zona Integritas",
-            link: ["Respon Pelanggan", "Pengaduan Masyarakat", "Pelaporan Gratifikasi", "Transparansi & Akuntabilitas"]
+            link: [
+                { label: "Respon Pelanggan", to: "/layanan/informasi-publik/laporan-laporan/respon-pelanggan" },
+                { label: "Pengaduan Masyarakat", to: "/not-found" },
+                { label: "Pelaporan Gratifikasi", to: "/not-found" },
+                { label: "Transparansi & Akuntabilitas", to: "/not-found" }
+            ]
         },
         {
             id: 3,
             title: "Layanan",
-            link: ["Legalisir", "Surat Rekomendasi", "Informasi Publik", "Survei Kepuasan"]
+            link: [
+                { label: "Legalisir", to: "/layanan/legalisir-di-rumah" },
+                { label: "Surat Rekomendasi", to: "/layanan/surat-rekomendasi" },
+                { label: "Informasi Publik", to: "/layanan/informasi-publik" },
+                { label: "Survei Kepuasan", to: "/layanan/informasi-publik/survei-kepuasan-pelanggan" }
+            ]
         },
         {
             id: 4,
             title: "Sertifikat & Standar",
-            link: ["Sertifikasi Pendidikan Vokasi", "Akreditasi \"A\" BAN-SM"]
+            link: [
+                { label: "Sertifikasi Pendidikan Vokasi", to: "/not-found" },
+                { label: "Akreditasi \"A\" BAN-SM", to: "/not-found" }
+            ]
         }
     ]
 }

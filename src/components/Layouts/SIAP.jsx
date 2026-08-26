@@ -8,7 +8,7 @@ const SIAP = () => {
         Aos.init({ duration: 1000 })
     }, [])
 
-    return <div className="flex flex-col justify-center gap-5 px-20 py-10">
+    return <div className="flex flex-col justify-center gap-5 px-10 md:px-20 py-10">
         <div
          data-aos="fade-up"
             className="flex flex-col justify-center gap-2"
@@ -18,7 +18,7 @@ const SIAP = () => {
         </div>
         <div
             data-aos="zoom-in"
-            className="grid grid-cols-4 gap-5"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
         >
             <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Buku Pribadi Digital</Link>
             <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Jarvis GENUS</Link>
@@ -30,10 +30,10 @@ const SIAP = () => {
             <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Praktik Kimia Terpadu - 2</Link>
             <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Pelaporan Gratifikasi</Link>
             <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Benturan Kepentingan</Link>
-            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Respon Pelanggan</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/layanan/informasi-publik/laporan-laporan/respon-pelanggan">Respon Pelanggan</Link>
             <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Whistle Blowing System</Link>
-            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Legalisir di Rumah (LDR)</Link>
-            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Surat Rekomendasi</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/layanan/legalisir-di-rumah">Legalisir di Rumah (LDR)</Link>
+            <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/layanan/surat-rekomendasi">Surat Rekomendasi</Link>
             <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Carrier Development Center</Link>
             <Link className="px-5 py-5 rounded border border-gray-200 transition delay-150 duration-300 hover:text-blue-500 hover:border-blue-500" to="/not-found">Praktik Kerja Industri</Link>
         </div>

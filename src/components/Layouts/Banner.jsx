@@ -13,7 +13,7 @@ const Banner = () => {
     }, [])
 
     return <div className="flex flex-col justify-center gap-5 h-screen">
-        <img
+        <img alt="SMK Gema Nusantara" loading="lazy"
             className="w-full h-full mx-auto bg-cover bg-center relative"
             src={"../WhatsApp Image 2026-01-16 at 8.37.43 AM.jpeg"}
         />
@@ -23,13 +23,13 @@ const Banner = () => {
             className="absolute flex flex-col gap-5 px-40 text-white"
         >
             <div className="flex gap-5">
-                <img
+                <img loading="lazy"
                     src="https://smkgemanusantara.sch.id/wp-content/uploads/elementor/thumbs/SMK-Bisa-Hebat-150x150-1-q6xu6slyj94b4euyhw7nzya0ubk56lvcw5su30xrd6.png"
                     alt=""
                     width={60}
                     height={60}
                 />
-                <img
+                <img loading="lazy"
                     src="https://smkgemanusantara.sch.id/wp-content/uploads/elementor/thumbs/Logo-SMK-Circle-1-qcs0l2z5y2w064roj3flq7mi26i1nifl2wt3il54ui.png"
                     alt=""
                     width={60}

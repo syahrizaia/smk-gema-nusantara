@@ -12,11 +12,11 @@ const HubungiKami = () => {
 
     return <>
         <Navbar />
-        <div className="bg-blue-500 text-white flex flex-col gap-3 text-center px-20 py-5">
+        <div className="bg-blue-500 text-white flex flex-col gap-3 text-center px-10 md:px-20 py-5 pt-24">
             <h1 className="text-3xl font-bold">SMK Gema Nusantara</h1>
             <p>JL. Raya Cibarusah, Warung Bambu, Sindangmulya, Kec. Cibarusah, Kab. Bekasi Prov. Jawa Barat</p>
         </div>
-        <div className="grid grid-cols-3 gap-10 px-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-10 md:px-20">
             {dataHubungiKami.dataSekolah.map((item) => (
                 <div key={item.id} className="flex flex-col gap-5 py-5">
                     <h1

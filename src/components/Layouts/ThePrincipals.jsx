@@ -18,7 +18,7 @@ const ThePrincipals = () => {
                     key={item.id}
                     className="flex flex-row gap-5"
                 >
-                    <img
+                    <img loading="lazy"
                         className="w-28 h-28 transition-transform delay-150 duration-300 hover:scale-125"
                         src={item.photo}
                         alt={item.name}

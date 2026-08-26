@@ -1,46 +1,46 @@
-import { StrictMode } from 'react'
+import { StrictMode, lazy, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Pembelajaran from './components/pages/pembelajaran/index.jsx'
-import Layanan from './components/pages/layanan/index.jsx'
-import Prestasi from './components/pages/prestasi/index.jsx'
-import Lulusan from './components/pages/lulusan/index.jsx'
-import HubungiKami from './components/pages/hubungi-kami/index.jsx'
-import NotFound from './components/pages/NotFound.jsx'
-import TentangKami from './components/pages/tentang-kami/index.jsx'
-import BeritaTerkini from './components/pages/tentang-kami/BeritaTerkini.jsx'
-import Sejarah from './components/pages/tentang-kami/Sejarah.jsx'
-import VisiMisi from './components/pages/tentang-kami/VisiMisi.jsx'
-import SasaranMutu from './components/pages/tentang-kami/SasaranMutu.jsx'
-import KepalaSekolah from './components/pages/tentang-kami/struktur/KepalaSekolah.jsx'
-import JadwalPembelajaran from './components/pages/pembelajaran/kurikulum/JadwalPembelajaran.jsx'
-import StrukturKurikulum from './components/pages/pembelajaran/kurikulum/StrukturKurikulum.jsx'
-import FasilitasLaboratorium from './components/pages/pembelajaran/fasilitas/FasilitasLaboratorium.jsx'
-import StatistikSDM from './components/pages/pembelajaran/sumber-daya-manusia/StatistikSDM.jsx'
-import KegiatanTahunan from './components/pages/pembelajaran/kegiatan/KegiatanTahunan.jsx'
-import OrganisasiSiswa from './components/pages/pembelajaran/kegiatan/OrganisasiSiswa.jsx'
-import EkstrakurikulerSiswa from './components/pages/pembelajaran/kegiatan/EkstrakurikulerSiswa.jsx'
-import LegalisirDiRumah from './components/pages/layanan/LegalisirDiRumah.jsx'
-import SuratRekomendasi from './components/pages/layanan/SuratRekomendasi.jsx'
-import PermohonanInformasiPublik from './components/pages/layanan/informasi-publik/PermohonanInformasiPublik.jsx'
-import PPID from './components/pages/layanan/informasi-publik/laporan-laporan/PPID.jsx'
-import SurveiKepuasanPelanggan from './components/pages/layanan/informasi-publik/SurveiKepuasanPelanggan.jsx'
-import JenisInformasi from './components/pages/layanan/informasi-publik/JenisInformasi.jsx'
-import TataUsaha from './components/pages/layanan/informasi-publik/laporan-laporan/TataUsaha.jsx'
-import ResponPelanggan from './components/pages/layanan/informasi-publik/laporan-laporan/ResponPelanggan.jsx'
-import PrestasiGuru from './components/pages/prestasi/PrestasiGuru.jsx'
-import PrestasiSekolah from './components/pages/prestasi/PrestasiSekolah.jsx'
-import PrestasiSiswa from './components/pages/prestasi/PrestasiSiswa.jsx'
-import BintangBelajar from './components/pages/prestasi/BintangBelajar.jsx'
-import KeterserapanLulusan from './components/pages/lulusan/KeterserapanLulusan.jsx'
-import IndustriMitra from './components/pages/lulusan/IndustriMitra.jsx'
-import StrukturOrganisasi from './components/pages/tentang-kami/struktur/StrukturOrganisasi.jsx'
-import FasilitasPenunjang from './components/pages/pembelajaran/fasilitas/FasilitasPenunjang.jsx'
-import ProfilSDM from './components/pages/pembelajaran/sumber-daya-manusia/ProfilSDM.jsx'
-import InformasiPublik from './components/pages/layanan/informasi-publik/index.jsx'
-import LaporanLaporan from './components/pages/layanan/informasi-publik/laporan-laporan/index.jsx'
+const Pembelajaran = lazy(() => import('./components/pages/pembelajaran/index.jsx'))
+const Layanan = lazy(() => import('./components/pages/layanan/index.jsx'))
+const Prestasi = lazy(() => import('./components/pages/prestasi/index.jsx'))
+const Lulusan = lazy(() => import('./components/pages/lulusan/index.jsx'))
+const HubungiKami = lazy(() => import('./components/pages/hubungi-kami/index.jsx'))
+const NotFound = lazy(() => import('./components/pages/NotFound.jsx'))
+const TentangKami = lazy(() => import('./components/pages/tentang-kami/index.jsx'))
+const BeritaTerkini = lazy(() => import('./components/pages/tentang-kami/BeritaTerkini.jsx'))
+const Sejarah = lazy(() => import('./components/pages/tentang-kami/Sejarah.jsx'))
+const VisiMisi = lazy(() => import('./components/pages/tentang-kami/VisiMisi.jsx'))
+const SasaranMutu = lazy(() => import('./components/pages/tentang-kami/SasaranMutu.jsx'))
+const KepalaSekolah = lazy(() => import('./components/pages/tentang-kami/struktur/KepalaSekolah.jsx'))
+const JadwalPembelajaran = lazy(() => import('./components/pages/pembelajaran/kurikulum/JadwalPembelajaran.jsx'))
+const StrukturKurikulum = lazy(() => import('./components/pages/pembelajaran/kurikulum/StrukturKurikulum.jsx'))
+const FasilitasLaboratorium = lazy(() => import('./components/pages/pembelajaran/fasilitas/FasilitasLaboratorium.jsx'))
+const StatistikSDM = lazy(() => import('./components/pages/pembelajaran/sumber-daya-manusia/StatistikSDM.jsx'))
+const KegiatanTahunan = lazy(() => import('./components/pages/pembelajaran/kegiatan/KegiatanTahunan.jsx'))
+const OrganisasiSiswa = lazy(() => import('./components/pages/pembelajaran/kegiatan/OrganisasiSiswa.jsx'))
+const EkstrakurikulerSiswa = lazy(() => import('./components/pages/pembelajaran/kegiatan/EkstrakurikulerSiswa.jsx'))
+const LegalisirDiRumah = lazy(() => import('./components/pages/layanan/LegalisirDiRumah.jsx'))
+const SuratRekomendasi = lazy(() => import('./components/pages/layanan/SuratRekomendasi.jsx'))
+const PermohonanInformasiPublik = lazy(() => import('./components/pages/layanan/informasi-publik/PermohonanInformasiPublik.jsx'))
+const PPID = lazy(() => import('./components/pages/layanan/informasi-publik/laporan-laporan/PPID.jsx'))
+const SurveiKepuasanPelanggan = lazy(() => import('./components/pages/layanan/informasi-publik/SurveiKepuasanPelanggan.jsx'))
+const JenisInformasi = lazy(() => import('./components/pages/layanan/informasi-publik/JenisInformasi.jsx'))
+const TataUsaha = lazy(() => import('./components/pages/layanan/informasi-publik/laporan-laporan/TataUsaha.jsx'))
+const ResponPelanggan = lazy(() => import('./components/pages/layanan/informasi-publik/laporan-laporan/ResponPelanggan.jsx'))
+const PrestasiGuru = lazy(() => import('./components/pages/prestasi/PrestasiGuru.jsx'))
+const PrestasiSekolah = lazy(() => import('./components/pages/prestasi/PrestasiSekolah.jsx'))
+const PrestasiSiswa = lazy(() => import('./components/pages/prestasi/PrestasiSiswa.jsx'))
+const BintangBelajar = lazy(() => import('./components/pages/prestasi/BintangBelajar.jsx'))
+const KeterserapanLulusan = lazy(() => import('./components/pages/lulusan/KeterserapanLulusan.jsx'))
+const IndustriMitra = lazy(() => import('./components/pages/lulusan/IndustriMitra.jsx'))
+const StrukturOrganisasi = lazy(() => import('./components/pages/tentang-kami/struktur/StrukturOrganisasi.jsx'))
+const FasilitasPenunjang = lazy(() => import('./components/pages/pembelajaran/fasilitas/FasilitasPenunjang.jsx'))
+const ProfilSDM = lazy(() => import('./components/pages/pembelajaran/sumber-daya-manusia/ProfilSDM.jsx'))
+const InformasiPublik = lazy(() => import('./components/pages/layanan/informasi-publik/index.jsx'))
+const LaporanLaporan = lazy(() => import('./components/pages/layanan/informasi-publik/laporan-laporan/index.jsx'))
 
 const router = createBrowserRouter([
   {
@@ -203,6 +203,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <Suspense fallback={<div className="h-screen w-screen flex items-center justify-center bg-white"><div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-500"></div></div>}>
+      <RouterProvider router={router} />
+    </Suspense>
   </StrictMode>,
 )

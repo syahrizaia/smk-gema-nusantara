@@ -16,7 +16,7 @@ const StrukturOrganisasi = () => {
             data-aos="fade-up"
             className="flex justify-center items-center px-20 py-20"
         >
-            <img
+            <img loading="lazy"
                 src="https://smkgemanusantara.sch.id/wp-content/uploads/2025/10/WhatsApp-Image-2025-10-03-at-21.53.13.jpeg"
                 alt=""
             />

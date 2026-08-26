@@ -3,8 +3,8 @@ import { dataFooter } from "../../service/data"
 
 const Footer = () => {
     return <footer>
-        <div className="bg-blue-200 flex justify-around items-start px-20 py-10">
-            <div className="grid grid-rows-3 gap-2 w-4/12">
+        <div className="bg-blue-200 flex flex-col md:flex-row justify-around items-start px-10 md:px-20 py-10 gap-10 md:gap-0">
+            <div className="grid grid-rows-3 gap-2 w-full md:w-4/12">
                 <h1 className="text-xl font-bold">SMK Gema Nusantara</h1>
                 <p>Jl. Raya Cibarusah, Warung Bambu, Sindangmulya, Kec. Cibarusah, Kab. Bekasi, Prov. Jawa Barat</p>
                 <p>Phone: (021)22154328 <br /> Email: mail@smkgemanusantara.sch.id</p>
@@ -13,8 +13,8 @@ const Footer = () => {
                 <div key={item.id} className="flex flex-col items-start gap-5">
                     <h1 className="text-xl font-bold">{item.title}</h1>
                     <div className="flex flex-col gap-1">
-                        {item.link.map((link, id) => (
-                            <Link key={id} to="/not-found" className="text-black transition delay-150 duration-300 hover:text-blue-500">&rarr; {link}</Link>
+                        {item.link.map((l, id) => (
+                            <Link key={id} to={l.to} className="text-black transition delay-150 duration-300 hover:text-blue-500">&rarr; {l.label}</Link>
                         ))}
                     </div>
                 </div>

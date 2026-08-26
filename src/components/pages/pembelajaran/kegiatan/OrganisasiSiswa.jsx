@@ -16,7 +16,7 @@ const OrganisasiSiswa = () => {
             <p>Persatuan Pelajar merupakan Organisasi Siswa Intra Sekolah (OSIS) yang dimiliki oleh SMK Gema Nusantara.</p>
         </div>
         <div className="flex flex-col gap-10 px-20 py-10">
-            <img
+            <img loading="lazy"
                 data-aos="zoom-in"
                 className="w-1/2 rounded"
                 src="https://smkgemanusantara.sch.id/wp-content/plugins/elementor/assets/images/placeholder.png"

@@ -13,7 +13,7 @@ const VisiMisi = () => {
     return <div>
         <Navbar />
         <h1 className="text-3xl font-bold text-white text-center bg-blue-500 py-5">Visi dan Misi SMK - SMKS Gema Nusantara 2020 - 2024</h1>
-        <img
+        <img loading="lazy"
             data-aos="zoom-in"
             className="w-full h-96 object-cover object-top-left"
             src="../WhatsApp Image 2026-01-16 at 8.37.43 AM.jpeg"

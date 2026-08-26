@@ -18,9 +18,9 @@ const Lulusan = () => {
         </div>
         {dataLulusan.dataContent.map((item) => (
             <div className="flex flex-col px-40 py-5" key={item.id}>
-                <img data-aos="zoom-in" src={item.image1} alt={item.title} />
+                <img loading="lazy" data-aos="zoom-in" src={item.image1} alt={item.title} />
                 <h1 data-aos="fade-right" className="text-3xl">{item.title}</h1>
-                <img data-aos="zoom-in" src={item.image2} alt={item.title} />
+                <img loading="lazy" data-aos="zoom-in" src={item.image2} alt={item.title} />
             </div>
         ))}
         <Footer />

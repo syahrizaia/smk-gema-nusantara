@@ -21,7 +21,7 @@ const KepalaSekolah = () => {
                     data-aos="fade-right"
                     className="flex flex-col items-center gap-5 w-full md:w-1/3"
                 >
-                    <img src={headmasterById.photo} alt={headmasterById.name} className="rounded-xl" />
+                    <img loading="lazy" src={headmasterById.photo} alt={headmasterById.name} className="rounded-xl" />
                     <h1 className="text-center text-3xl font-bold">{headmasterById.name}</h1>
                     <p className="text-blue-600 font-semibold mb-4">{headmasterById.position}</p>
                     <div className="flex items-center justify-center gap-5 mt-4">
