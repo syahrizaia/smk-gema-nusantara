@@ -1,50 +1,85 @@
-import Footer from "../../Layouts/Footer"
-import Navbar from "../../Layouts/Navbar"
-import TotalNews from "../../Layouts/TotalNews"
-import { dataProfil } from "../../../service/data"
-import { useEffect } from "react"
-import Aos from "aos"
-import 'aos/dist/aos.css';
+import React from "react";
+import PageLayout from "../../Layouts/PageLayout";
+import TotalNews from "../../Layouts/TotalNews";
+import { dataProfil } from "../../../service/data";
 
 const TentangKami = () => {
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, [])
+  return (
+    <PageLayout
+      badge="PROFIL RESMI"
+      badgeVariant="default"
+      title="Tentang Kami"
+      gradientText="SMK Gema Nusantara"
+      subtitle="Mengenal lebih dekat sejarah, ekosistem pembelajaran Teaching Factory, dan kemitraan industri manufaktur SMK Pusat Keunggulan di Kabupaten Bekasi."
+      breadcrumbs={[{ label: "Tentang Kami" }]}
+    >
+      <div className="flex flex-col gap-10">
+        {dataProfil.dataContent.map((item, index) => {
+          const isVideo = item.media && item.media.includes("youtube.com");
+          const embedUrl = isVideo
+            ? item.media.replace("watch?v=", "embed/")
+            : item.media;
 
-    return <>
-        <Navbar />
-        <h1 className="text-3xl font-bold text-white text-center bg-blue-500 py-5">Profil Singkat SMK Gema Nusantara</h1>
-        {dataProfil.dataContent.map((item) => (
-            <div key={item.id} className="flex flex-col gap-3 px-20 py-10">
-                <h1
-                    data-aos="fade-down"
-                    className="text-3xl font-bold mb-5"
-                >
-                    {item.title}
-                </h1>
-                <div className="flex gap-5">
-                    <p data-aos="fade-right">{item.content}</p>
-                    {item.media && (
-                        <div>
-                            <iframe
-                                data-aos="fade-left"
-                                className="rounded"
-                                width="560"
-                                height="315"
-                                src={item.media}
-                                title="YouTube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen 
-                            />
-                        </div>
-                    )}
+          return (
+            <div
+              key={item.id}
+              className="liquid-glass-card liquid-sheen p-6 sm:p-10 flex flex-col lg:flex-row gap-8 items-center"
+            >
+              <div className={`flex-1 text-left ${index % 2 === 1 ? "lg:order-2" : ""}`}>
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="liquid-badge text-[10px]">
+                    BAGIAN 0{item.id}
+                  </span>
+                  {item.title && (
+                    <span className="text-xs font-semibold text-cyan-400">
+                      Standar Vokasi
+                    </span>
+                  )}
                 </div>
-            </div>
-        ))}
-        <TotalNews />
-        <Footer />
-    </>
-}
 
-export default TentangKami
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-4">
+                  {item.title || "Profil Sekolah Menengah Kejuruan Gema Nusantara"}
+                </h2>
+
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                  {item.content}
+                </p>
+              </div>
+
+              {item.media && (
+                <div
+                  className={`w-full lg:w-5/12 flex-shrink-0 ${
+                    index % 2 === 1 ? "lg:order-1" : ""
+                  }`}
+                >
+                  <div className="liquid-glass p-2 rounded-2xl border border-white/20 shadow-xl overflow-hidden aspect-video bg-slate-900">
+                    {isVideo ? (
+                      <iframe
+                        className="w-full h-full rounded-xl"
+                        src={embedUrl}
+                        title={item.title || "Video Profil"}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    ) : (
+                      <img
+                        src={item.media}
+                        alt={item.title}
+                        className="w-full h-full object-cover rounded-xl"
+                        loading="lazy"
+                      />
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })}
+
+        <TotalNews />
+      </div>
+    </PageLayout>
+  );
+};
+
+export default TentangKami;

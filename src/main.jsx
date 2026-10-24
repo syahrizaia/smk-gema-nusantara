@@ -46,6 +46,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <NotFound />,
   },
   {
     path: '/tentang-kami',
@@ -203,7 +204,12 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Suspense fallback={<div className="h-screen w-screen flex items-center justify-center bg-white"><div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-500"></div></div>}>
+    <Suspense fallback={
+      <div className="h-screen w-screen flex flex-col items-center justify-center bg-[#090d16] text-white gap-4">
+        <div className="animate-spin rounded-full h-12 w-12 border-2 border-cyan-400 border-t-transparent shadow-lg shadow-cyan-500/30"></div>
+        <p className="text-xs font-mono text-cyan-300 tracking-widest uppercase animate-pulse">Memuat Portal SMK GN...</p>
+      </div>
+    }>
       <RouterProvider router={router} />
     </Suspense>
   </StrictMode>,

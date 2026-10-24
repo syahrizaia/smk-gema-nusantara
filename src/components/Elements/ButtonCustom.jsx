@@ -1,10 +1,32 @@
-const ButtonCustom = ({ children, onClick }) => {
-    return <button
-        onClick={onClick}
-        className="bg-blue-500 text-white px-4 py-2 rounded transition delay-150 duration-300 hover:bg-blue-600"
-    >
-        {children}
-    </button>
-}
+import React from "react";
 
-export default ButtonCustom
+const ButtonCustom = ({
+  children,
+  onClick,
+  variant = "primary",
+  className = "",
+  type = "button",
+  disabled = false,
+  ...props
+}) => {
+  const baseClass =
+    variant === "secondary"
+      ? "liquid-btn-secondary"
+      : variant === "glass"
+      ? "liquid-glass-elevated px-5 py-2.5 rounded-full font-semibold text-white hover:border-cyan-400/50 transition-all duration-300 cursor-pointer"
+      : "liquid-btn-primary";
+
+  return (
+    <button
+      type={type}
+      onClick={onClick}
+      disabled={disabled}
+      className={`${baseClass} liquid-sheen ${className} ${disabled ? "opacity-50 cursor-not-allowed" : ""}`}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+};
+
+export default ButtonCustom;
